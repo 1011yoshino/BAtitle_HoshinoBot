@@ -9,7 +9,7 @@ sv = Service(
     enable_on_default=True
     )
 
-@sv.on_prefix(('ba标题', 'balogo', 'balg'))
+@sv.on_prefix(('batitle', 'ba标题', 'balogo', 'balg'))
 async def balogo(bot, ev: CQEvent):
     msg_list = []
     key = ev.message.extract_plain_text().strip()
